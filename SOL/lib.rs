@@ -78,3 +78,14 @@ const VOW_CATEGORIES = [
   "Mentorship",
   "ElderSupport"
 ];
+
+#[constant]
+pub const DAO_VERIFIER: Pubkey = pubkey!("DAO_VERIFIER_PUBLIC_KEY");
+
+pub fn verify_log(ctx: Context<VerifyLog>) -> Result<()> {
+    let log = &mut ctx.accounts.log;
+    require_keys_eq!(ctx.accounts.verifier.key(), DAO_VERIFIER, Unauthorized);
+    log.verified = true;
+    log.verifier = ctx.accounts.verifier.key();
+    Ok(())
+}
