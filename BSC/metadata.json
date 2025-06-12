@@ -1,0 +1,7 @@
+{
+  "name": "MGO Elder Support Badge",
+  "symbol": "MGOBADGE",
+  "description": "Awarded for 3 acts of service to elders.",
+  "image": "https://.../elder_badge.png",
+  "attributes": [{ "trait_type": "Category", "value": "ElderSupport" }]
+}
