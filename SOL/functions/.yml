@@ -1,0 +1,7 @@
+vows/
+  <vowLogPubkey>/
+    user: "..."
+    text: "..."
+    verified: true
+    timestamp: 123456789
+    category: 2
