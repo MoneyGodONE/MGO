@@ -1,0 +1,1 @@
+pub category: u8, // stored as enum index
