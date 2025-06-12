@@ -1,0 +1,17 @@
+#[account]
+pub struct VowLog {
+    pub user: Pubkey,
+    pub vow_text: String,
+    pub timestamp: i64,
+    pub verified: bool,
+    pub category: u8,
+    pub verifier: Pubkey, // who verified it (if any)
+}
+
+pub fn verify_log(ctx: Context<VerifyLog>) -> Result<()> {
+    let log = &mut ctx.accounts.log;
+    require!(AUTHORIZED_VERIFIERS.contains(&ctx.accounts.verifier.key()), CustomError::Unauthorized);
+    log.verified = true;
+    log.verifier = ctx.accounts.verifier.key();
+    Ok(())
+}
