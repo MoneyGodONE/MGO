@@ -1,0 +1,53 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+contract MGOCrowdfund {
+    struct Campaign {
+        address creator;
+        string title;
+        uint256 goal;
+        uint256 pledged;
+        uint256 deadline;
+        bool claimed;
+    }
+
+    uint public campaignCount;
+    mapping(uint => Campaign) public campaigns;
+    mapping(uint => mapping(address => uint)) public pledges;
+
+    event CampaignCreated(uint id, address creator);
+    event Pledged(uint id, address backer, uint amount);
+    event Claimed(uint id);
+
+    function createCampaign(string memory _title, uint _goal, uint _duration) external {
+        campaignCount++;
+        campaigns[campaignCount] = Campaign({
+            creator: msg.sender,
+            title: _title,
+            goal: _goal,
+            pledged: 0,
+            deadline: block.timestamp + _duration,
+            claimed: false
+        });
+        emit CampaignCreated(campaignCount, msg.sender);
+    }
+
+    function pledge(uint _id) external payable {
+        Campaign storage c = campaigns[_id];
+        require(block.timestamp < c.deadline, "Ended");
+        c.pledged += msg.value;
+        pledges[_id][msg.sender] += msg.value;
+        emit Pledged(_id, msg.sender, msg.value);
+    }
+
+    function claim(uint _id) external {
+        Campaign storage c = campaigns[_id];
+        require(msg.sender == c.creator, "Not creator");
+        require(c.pledged >= c.goal, "Goal not reached");
+        require(!c.claimed, "Already claimed");
+
+        c.claimed = true;
+        payable(c.creator).transfer(c.pledged);
+        emit Claimed(_id);
+    }
+}
