@@ -1,0 +1,7 @@
+{
+  "user": "0x... or Solana pubkey",
+  "amount": 1.23,
+  "campaignId": 7,
+  "chain": "solana" or "bsc" or "base",
+  "timestamp": 1717942595000
+}
