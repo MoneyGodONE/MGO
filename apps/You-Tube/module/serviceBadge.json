@@ -1,0 +1,10 @@
+{
+  "name": "Money God One Service",
+  "symbol": "MGO",
+  "description": "Awarded for committing to acts of kindness and volunteer service.",
+  "image": "https://arweave.net/YOUR_SERVICE_BADGE_IMAGE_ID",
+  "attributes": [
+    { "trait_type": "Category", "value": "Service" },
+    { "trait_type": "Level", "value": "Action" }
+  ]
+}
