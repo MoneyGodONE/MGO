@@ -1,0 +1,10 @@
+{
+  "name": "Pray Money God One",
+  "symbol": "MGO",
+  "description": "Awarded for submitting a spiritual vow with faith and dedication.",
+  "image": "https://arweave.net/YOUR_PRAYER_BADGE_IMAGE_ID",
+  "attributes": [
+    { "trait_type": "Category", "value": "Prayer" },
+    { "trait_type": "Level", "value": "Spiritual" }
+  ]
+}
