@@ -1,0 +1,22 @@
+{
+  "prayer.json": {
+    "name": "Prayer Vow Badge",
+    "symbol": "MGO",
+    "description": "Awarded for submitting a spiritual vow through Money God One.",
+    "image": "https://arweave.net/YOUR_PRAYER_BADGE_IMAGE_LINK",
+    "attributes": [
+      { "trait_type": "Category", "value": "Prayer" },
+      { "trait_type": "Faith", "value": "One God" }
+    ]
+  },
+  "service.json": {
+    "name": "Service Vow Badge",
+    "symbol": "MGO",
+    "description": "Awarded for committing to an act of volunteer service via MGO.",
+    "image": "https://arweave.net/YOUR_SERVICE_BADGE_IMAGE_LINK",
+    "attributes": [
+      { "trait_type": "Category", "value": "Service" },
+      { "trait_type": "Spirit", "value": "Global Volunteerism" }
+    ]
+  }
+}
