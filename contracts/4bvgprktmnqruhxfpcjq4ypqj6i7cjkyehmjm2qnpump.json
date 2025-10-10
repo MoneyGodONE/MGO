@@ -1,1 +1,35 @@
-
+{
+"symbol": "MGO",
+"name": "Money God One",
+"type": "SPL",
+"address": "4bvgprktmnqruhxfpcjq4ypqj6i7cjkyehmjm2qnpump",
+"ens_address": "",
+"decimals": 6,
+"website": "https://moneygod.one",
+"logo": {
+"src": "https://moneygod.one/images/banners/MGO32.png",
+"width": "32px",
+"height": "32px",
+"ipfs_hash": "https://ipfs.io/ipfs/QmS5bA4d7Z3yGyHSwhzyQkut1muMmBocbxnTkZpBekAoJE"
+},
+"support": {
+"email": "one@moneygod.one",
+"url": "https://moneygod.one"
+},
+"social": {
+"blog": "https://medium.com/@moneygodone",
+"chat": "https://t.me/MONEYGOD_ONE1",
+"discord": "https://discord.gg/KXs8cbxTFJ",
+"facebook": "https://facebook.com/MONEYGODONE",
+"forum": "https://bitcointalk.org/index.php?topic=5544333.new#new",
+"github": "https://github.com/MoneyGodONE",
+"gitter": "",
+"instagram": "https://www.instagram.com/moneygodone",
+"linkedin": "https://www.linkedin.com/company/moneygodone",
+"reddit": "https://www.reddit.com/u/MGOCrypto",
+"slack": "",
+"telegram": "https://t.me/MONEYGOD_ONE",
+"twitter": "https://x.com/MoneyGodOne",
+"youtube": "https://www.youtube.com/@MoneyGodOne"
+}
+}
