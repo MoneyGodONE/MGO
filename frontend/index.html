@@ -1,1 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MGO — Apps & DApps Dashboard</title>
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --accent:#9bffb8; --muted:#97a0b3;
+      --glass: rgba(255,255,255,0.03);
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,#071124 0%, #051021 100%);color:#e6eef8}
+    .container{max-width:1100px;margin:36px auto;padding:24px}
+    header{display:flex;align-items:center;gap:16px}
+    .logo{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,#0ea5a3,#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700}
+    h1{margin:0;font-size:20px}
+    p.lead{margin:4px 0 18px;color:var(--muted)}
+    nav{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}
+    nav a{padding:8px 12px;border-radius:10px;background:var(--glass);text-decoration:none;color:var(--muted);font-size:14px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:16px;border-radius:12px;box-shadow:0 6px 20px rgba(2,6,23,0.6);min-height:120px}
+    .card h3{margin:0 0 8px;font-size:16px}
+    .card p{margin:0;color:var(--muted);font-size:13px}
+    .app-list{display:flex;flex-direction:column;gap:8px;margin-top:12px}
+    .app-entry{display:flex;justify-content:space-between;align-items:center;padding:8px;border-radius:8px;background:rgba(255,255,255,0.01);font-size:14px}
+    .tag{padding:4px 8px;border-radius:999px;background:rgba(255,255,255,0.03);font-size:12px;color:var(--muted)}
+    footer{margin-top:28px;color:var(--muted);font-size:13px;text-align:center}
+    /* responsive */
+    @media (max-width:900px){ .grid{grid-template-columns:repeat(2,1fr)} }
+    @media (max-width:600px){ .grid{grid-template-columns:repeat(1,1fr)} header{flex-direction:column;align-items:flex-start} }
+  </style>
+</head>
+<body>
+  <div class="container" id="mgo-dashboard">
+    <header>
+      <div class="logo">MGO</div>
+      <div>
+        <h1>MoneyGodONE — Apps & DApps</h1>
+        <p class="lead">Project dashboard scaffold for the MGO monorepo (folders: BSC, NFT, SOL, apps, contracts, frontend, docs).</p>
+      </div>
+    </header>
+
+    <nav aria-label="quick-links">
+      <a href="https://github.com/MoneyGodONE/MGO" target="_blank" rel="noopener">Repo</a>
+      <a href="https://github.com/MoneyGodONE/MGO/tree/main/apps" target="_blank" rel="noopener">/apps</a>
+      <a href="https://github.com/MoneyGodONE/MGO/tree/main/contracts" target="_blank" rel="noopener">/contracts</a>
+      <a href="https://github.com/MoneyGodONE/MGO/tree/main/frontend" target="_blank" rel="noopener">/frontend</a>
+      <a href="https://github.com/MoneyGodONE/MGO/tree/main/docs" target="_blank" rel="noopener">/docs</a>
+    </nav>
+
+    <section class="grid" aria-label="main-grid">
+      <!-- Apps column -->
+      <div class="card" id="card-apps">
+        <h3>Apps (monorepo)</h3>
+        <p>General applications and utilities from the `apps` folder. Fill in app cards below.</p>
+
+        <div class="app-list" id="apps-list">
+          <!-- Example entries: replace with real folders/files -->
+          <div class="app-entry" data-path="apps/wallet">
+            <span>Wallet App</span>
+            <a class="tag" href="https://github.com/MoneyGodONE/MGO/tree/main/apps/wallet" target="_blank" rel="noopener">/apps/wallet</a>
+          </div>
+          <div class="app-entry" data-path="apps/explorer">
+            <span>Explorer</span>
+            <a class="tag" href="https://github.com/MoneyGodONE/MGO/tree/main/apps/explorer" target="_blank" rel="noopener">/apps/explorer</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- DApps by Chain column -->
+      <div class="card" id="card-dapps">
+        <h3>DApps (by chain)</h3>
+        <p>Group dapps by chain: BSC, SOL, NFT. Each entry links to the repo folder for that chain.</p>
+
+        <div class="app-list" id="dapps-list">
+          <div class="app-entry" data-chain="bsc" data-path="BSC">
+            <span>Binance Smart Chain dApps (BSC)</span>
+            <a class="tag" href="https://github.com/MoneyGodONE/MGO/tree/main/BSC" target="_blank" rel="noopener">/BSC</a>
+          </div>
+
+          <div class="app-entry" data-chain="sol" data-path="SOL">
+            <span>Solana dApps (SOL)</span>
+            <a class="tag" href="https://github.com/MoneyGodONE/MGO/tree/main/SOL" target="_blank" rel="noopener">/SOL</a>
+          </div>
+
+          <div class="app-entry" data-chain="nft" data-path="NFT">
+            <span>NFT & collectibles</span>
+            <a class="tag" href="https://github.com/MoneyGodONE/MGO/tree/main/NFT" target="_blank" rel="noopener">/NFT</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contracts & Frontend column -->
+      <div class="card" id="card-contracts">
+        <h3>Contracts & Frontend</h3>
+        <p>Smart contracts, ABI, and frontend apps that interact with them.</p>
+
+        <div class="app-list">
+          <div class="app-entry" data-path="contracts">
+            <span>Contracts (solidity / rust)</span>
+            <a class="tag" href="https://github.com/MoneyGodONE/MGO/tree/main/contracts" target="_blank" rel="noopener">/contracts</a>
+          </div>
+          <div class="app-entry" data-path="frontend">
+            <span>Frontend (react / dapp UI)</span>
+            <a class="tag" href="https://github.com/MoneyGodONE/MGO/tree/main/frontend" target="_blank" rel="noopener">/frontend</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Docs & Packages -->
+      <div class="card" id="card-docs">
+        <h3>Docs & Packages</h3>
+        <p>Documentation and shared packages / utilities.</p>
+
+        <div class="app-list">
+          <div class="app-entry" data-path="docs">
+            <span>Project docs</span>
+            <a class="tag" href="https://github.com/MoneyGodONE/MGO/tree/main/docs" target="_blank" rel="noopener">/docs</a>
+          </div>
+          <div class="app-entry" data-path="packages/utils">
+            <span>Packages / utils</span>
+            <a class="tag" href="https://github.com/MoneyGodONE/MGO/tree/main/packages" target="_blank" rel="noopener">/packages</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Search / metadata -->
+      <div class="card" id="card-meta">
+        <h3>Repo metadata</h3>
+        <p>Language breakdown and monorepo notes.</p>
+        <p style="margin-top:10px;color:var(--muted)">Languages: JavaScript, Rust, TypeScript. (See repository root for full breakdown.)</p>
+        <p style="margin-top:8px"><a class="tag" href="https://github.com/MoneyGodONE/MGO" target="_blank" rel="noopener">Open repo</a></p>
+      </div>
+
+      <!-- Actions / Add -->
+      <div class="card" id="card-actions">
+        <h3>Actions</h3>
+        <p>Use this area for quick actions (e.g., "Scan repo", "Generate app list", "Open app").</p>
+        <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">
+          <button onclick="scanRepo()" style="padding:8px 12px;border-radius:8px;border:0;background:var(--card);color:var(--muted);cursor:pointer">Scan repo (manual)</button>
+          <button onclick="exportJSON()" style="padding:8px 12px;border-radius:8px;border:0;background:var(--card);color:var(--muted);cursor:pointer">Export JSON</button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      Built from the MGO monorepo structure. Repo root & folder names referenced while generating this scaffold.
+    </footer>
+  </div>
+
+  <script>
+    // Basic placeholders for potential automation: scanning folder list,
+    // converting into UI entries. Since CORS prevents direct GitHub tree fetch
+    // from static file, this is a local scaffold — replace the sample entries
+    // with actual folder names or integrate with a backend that uses the GitHub API.
+    function scanRepo(){
+      alert('This scaffold is static. To auto-scan, implement a server-side call to GitHub API and populate the DOM.');
+    }
+
+    function exportJSON(){
+      const data = {
+        repo: "https://github.com/MoneyGodONE/MGO",
+        lists: [
+          {section: "apps", url: "/apps", entries: []},
+          {section: "bsc", url: "/BSC", entries: []},
+          {section: "sol", url: "/SOL", entries: []},
+          {section: "nft", url: "/NFT", entries: []},
+          {section: "contracts", url: "/contracts", entries: []}
+        ]
+      };
+      const blob = new Blob([JSON.stringify(data, null, 2)], {type:"application/json"});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = 'mgo-structure.json'; a.click();
+      URL.revokeObjectURL(url);
+    }
+  </script>
+</body>
+        </html>
 
