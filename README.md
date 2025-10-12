@@ -1,3 +1,3 @@
-# MoneyGodONE Monorepo
-
-Contains all apps and packages for the MGO ecosystem.
+# MoneyGodONE Eco System
+https://moneygod.vercel.app
+Contains all apps and packages links for the MGO ecosystem.
