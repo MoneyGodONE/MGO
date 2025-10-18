@@ -7,3 +7,5 @@ To bridge: Use Wormhole SDK (install @wormhole-foundation/sdk) or Portal UI.Exam
 // See docs: https://docs.wormhole.com/wormhole/quick-start/token#transfer-tokens
 // This would lock on Solana and mint on BSC/Base via relayers.
 
+
+https://wormholescan.io/#/developers/integrators/submit-protocol
