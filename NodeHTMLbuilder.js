@@ -1,24 +1,32 @@
 const fs = require('fs');
 const fetch = require('node-fetch');
+const crypto = require('crypto');
 
-async function generateLandingPage() {
-  const org = "MoneyGodONE";
-  const repo = "MGO";
+const ORG = "MoneyGodONE";
+const REPO = "MGO";
+const FRONTEND_PATH = "./frontend/index.html";
+const REFRESH_INTERVAL = 60 * 60 * 1000; // every 1 hour if 1st 10 then 10 minutes
 
-  // 1️⃣ Get README from MGO
-  const readmeResp = await fetch(`https://raw.githubusercontent.com/${org}/${repo}/main/README.md`);
-  const readmeText = readmeResp.ok ? await readmeResp.text() : "README not found.";
+async function fetchReadme() {
+  const url = `https://raw.githubusercontent.com/${ORG}/${REPO}/main/README.md`;
+  const res = await fetch(url);
+  if (!res.ok) return "README not found.";
+  return await res.text();
+}
 
-  // 2️⃣ Get all repositories
-  const reposResp = await fetch(`https://api.github.com/users/${org}/repos?per_page=100`);
-  if (!reposResp.ok) {
-    console.error("Error fetching repos:", reposResp.status, reposResp.statusText);
-    return;
-  }
-  const repos = await reposResp.json();
-  repos.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at)); // newest first
+async function fetchRepos() {
+  const url = `https://api.github.com/users/${ORG}/repos?per_page=100`;
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`GitHub API error: ${res.status} ${res.statusText}`);
+  return await res.json();
+}
 
-  // 3️⃣ Build HTML
+function hashContent(content) {
+  return crypto.createHash("sha256").update(content).digest("hex");
+}
+
+function generateHTML(readmeText, repos) {
+  repos.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
   const repoCards = repos.map(r => `
     <div class="card">
       <h3><a href="${r.html_url}" target="_blank">${r.name}</a></h3>
@@ -27,12 +35,12 @@ async function generateLandingPage() {
     </div>
   `).join('');
 
-  const html = `
+  return `
   <!DOCTYPE html>
   <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>${org} — Ecosystem</title>
+    <title>${ORG} — Ecosystem</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
       body {
@@ -113,13 +121,38 @@ async function generateLandingPage() {
     </section>
 
     <footer>
-      © ${new Date().getFullYear()} MoneyGod.ONE | Built automatically via NodeHTMLbuilder.js
+      © ${new Date().getFullYear()} MoneyGod.ONE | Auto-updated every 10 min
     </footer>
   </body>
   </html>
   `;
+}
 
-  // 4️⃣ Save HTML file
-  fs.mkdirSync('./frontend', { recursive: true });
-  fs.writeFileSync('./frontend/index.html', html, 'utf8');
-  console.log(`✅ Landing page g
+async function buildLandingPage() {
+  try {
+    console.log("🔄 Checking for updates...");
+    const [readmeText, repos] = await Promise.all([fetchReadme(), fetchRepos()]);
+    const html = generateHTML(readmeText, repos);
+
+    // Check if content changed (compare hash)
+    const newHash = hashContent(html);
+    const oldHash = fs.existsSync(FRONTEND_PATH)
+      ? hashContent(fs.readFileSync(FRONTEND_PATH, "utf8"))
+      : null;
+
+    if (newHash !== oldHash) {
+      fs.mkdirSync('./frontend', { recursive: true });
+      fs.writeFileSync(FRONTEND_PATH, html, 'utf8');
+      console.log(`✅ Updated ${FRONTEND_PATH} with ${repos.length} repos.`);
+    } else {
+      console.log("✅ No changes detected, skipping write.");
+    }
+  } catch (err) {
+    console.error("❌ Error generating landing page:", err.message);
+  }
+}
+
+buildLandingPage();
+
+// 5️⃣ Auto-refresh every 1h now, not 10 minutes
+setInterval(buildLandingPage, REFRESH_INTERVAL);
