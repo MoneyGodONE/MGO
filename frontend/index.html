@@ -29,17 +29,14 @@
 
 <section>
   <h2>📘 NOTE (from MGO README)</h2>
-  <div class="note" id="readme">Loading README...</div>
+  <div class="note">${readmeText}</div>
 
   <h2>💎 Available Catalogues / Projects</h2>
-  <div class="catalog" id="repos">Loading projects...</div>
+  <div class="catalog">${repoCards}</div>
 </section>
 
 <footer>
-  © <span id="year"></span> MoneyGod.ONE | Auto-updated daily
+  © ${new Date().getFullYear()} MoneyGod.ONE | Auto-updated daily
 </footer>
-
-<script>
-const ORG = "MoneyGodONE";
-const REPO = "MGO";
-document.getElementById("year").textContent = ne
+</body>
+</html>
