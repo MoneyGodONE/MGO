@@ -2,8 +2,12 @@ name: Daily Landing Page Update
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # every day at midnight UTC
-  workflow_dispatch:     # allows manual trigger
+    - cron: '0 0 * * *'  # every midnight UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -18,8 +22,8 @@ jobs:
         run: node NodeHTMLbuilder.js
       - name: Commit and push updated frontend
         run: |
-          git config user.name "moneygod-bot"
-          git config user.email "bot@moneygod.one"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           git add frontend/index.html
-          git commit -m "Auto-update frontend"
+          git commit -m "Auto-update frontend [skip ci]" || echo "No changes"
           git push
