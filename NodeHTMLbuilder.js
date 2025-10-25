@@ -10,7 +10,7 @@ const __dirname = path.dirname(__filename);
 
 const ORG = "MoneyGodONE";
 const REPO = "MGO";
-const FRONTEND_PATH = path.join(__dirname, "public", "index.html"); 
+const FRONTEND_PATH = path.join(__dirname, "frontend", "index.html"); 
 const REFRESH_INTERVAL = 24 * 60 * 60 * 1000; // daily
 
 // Fetch README
