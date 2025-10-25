@@ -1,4 +1,7 @@
 {
+  "type": "module"
+}
+{
   "name": "mgo-monorepo",
   "private": true,
   "workspaces": ["apps/*", "packages/*"],
