@@ -1,13 +1,8 @@
 {
-  "builds": [
-    {
-      "src": "NodeHTMLbuilder.js",
-      "use": "@vercel/node"
-    }
-  ],
+  "version": 2,
   "routes": [
     {
-      "src": "/",
+      "src": "/(.*)",
       "dest": "/frontend/index.html"
     }
   ]
