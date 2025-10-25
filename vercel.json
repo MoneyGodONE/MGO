@@ -1,3 +1,14 @@
+{
+  "builds": [
     {
-      "outputDirectory": "frontend"
+      "src": "NodeHTMLbuilder.js",
+      "use": "@vercel/node"
     }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/frontend/index.html"
+    }
+  ]
+}
