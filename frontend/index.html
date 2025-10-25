@@ -29,14 +29,54 @@
 
 <section>
   <h2>📘 NOTE (from MGO README)</h2>
-  <div class="note">${readmeText}</div>
+  <div class="note" id="readme">Loading README...</div>
 
   <h2>💎 Available Catalogues / Projects</h2>
-  <div class="catalog">${repoCards}</div>
+  <div class="catalog" id="repos">Loading projects...</div>
 </section>
 
 <footer>
-  © ${new Date().getFullYear()} MoneyGod.ONE | Auto-updated daily
+  © <span id="year"></span> MoneyGod.ONE | Auto-updated daily
 </footer>
+
+<script>
+const USER = "MoneyGodONE";
+const REPO = "MGO";
+
+// Set the current year
+document.getElementById("year").textContent = new Date().getFullYear();
+
+// Fetch README
+fetch(`https://api.github.com/repos/${USER}/${REPO}/readme`)
+  .then(response => response.json())
+  .then(data => {
+    const content = atob(data.content.replace(/\n/g, ''));
+    document.getElementById("readme").innerText = content;
+  })
+  .catch(error => {
+    document.getElementById("readme").innerText = "Failed to load README: " + error.message;
+  });
+
+// Fetch repositories
+fetch(`https://api.github.com/users/${USER}/repos`)
+  .then(response => response.json())
+  .then(repos => {
+    const catalog = document.getElementById("repos");
+    catalog.innerHTML = '';
+    repos.forEach(repo => {
+      const card = document.createElement('div');
+      card.className = 'card';
+      card.innerHTML = `
+        <a href="${repo.html_url}" target="_blank">${repo.name}</a>
+        <p>${repo.description || 'No description available'}</p>
+        <div class="meta">⭐ ${repo.stargazers_count} | 🍴 ${repo.forks_count} | Updated: ${new Date(repo.updated_at).toLocaleDateString()}</div>
+      `;
+      catalog.appendChild(card);
+    });
+  })
+  .catch(error => {
+    document.getElementById("repos").innerText = "Failed to load projects: " + error.message;
+  });
+</script>
 </body>
 </html>
