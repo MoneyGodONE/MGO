@@ -1,16 +1,11 @@
 {
-  "type": "module"
-}
-{
-  "name": "mgo-monorepo",
-  "private": true,
-  "workspaces": ["apps/*", "packages/*"],
+  "name": "mgo-landing",
+  "version": "1.0.0",
+  "type": "module",
   "scripts": {
-    "dev": "turbo run dev",
-    "build": "turbo run build",
-    "lint": "turbo run lint"
+    "build": "node NodeHTMLbuilder.js"
   },
-  "devDependencies": {
-    "turbo": "^1.10.12"
+  "dependencies": {
+    "node-fetch": "^3.3.2"
   }
 }
