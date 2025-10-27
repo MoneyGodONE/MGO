@@ -2,7 +2,7 @@
   "name": "mgo",
   "version": "1.0.0",
   "description": "Public repository for MoneyGodONE/MGO",
-  "packageManager": "npm@10.8.1", // Specify npm version (adjust to match your local npm --version)
+  "packageManager": "npm@11.6.2",
   "scripts": {
     "build": "node NodeHTMLbuilder.js"
   },
