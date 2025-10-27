@@ -2,6 +2,7 @@
   "name": "mgo",
   "version": "1.0.0",
   "description": "Public repository for MoneyGodONE/MGO",
+  "packageManager": "npm@10.8.1", // Specify npm version (adjust to match your local npm --version)
   "scripts": {
     "build": "node NodeHTMLbuilder.js"
   },
@@ -9,5 +10,13 @@
   "license": "ISC",
   "dependencies": {
     "node-fetch": "^2.7.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MoneyGodONE/MGO.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MoneyGodONE/MGO/issues"
+  },
+  "homepage": "https://github.com/MoneyGodONE/MGO#readme"
 }
