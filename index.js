@@ -1,22 +1,14 @@
 const express = require('express');
+const path = require('path');
 const app = express();
-const port = process.env.PORT || 3000; // Use Vercel's PORT env var if available
+const port = process.env.PORT || 3000;
 
-// Middleware to parse JSON (if needed for APIs)
-app.use(express.json());
+// Serve static files from the 'frontend' directory (after running build)
+app.use(express.static(path.join(__dirname, 'frontend')));
 
-// Root route example
+// Fallback to index.html for root
 app.get('/', (req, res) => {
-  res.send('Welcome to MoneyGod.ONE Ecosystem! Explore our projects at https://github.com/MoneyGodONE/MGO');
-});
-
-// Add more routes as needed, e.g., for serving static files from /frontend
-// app.use(express.static('frontend'));
-
-// Error handling (basic)
-app.use((err, req, res, next) => {
-  console.error(err.stack);
-  res.status(500).send('Something broke!');
+  res.sendFile(path.join(__dirname, 'frontend', 'index.html'));
 });
 
 app.listen(port, () => {
