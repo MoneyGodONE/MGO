@@ -1,63 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-213213123213123213213</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MoneyGod.ONE Ecosystem</title>
+  <style>
+    body { font-family: sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+    h1 { text-align: center; }
+    .repo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; }
+    .repo-card { border: 1px solid #ddd; padding: 15px; border-radius: 8px; background-color: white; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    .repo-card a { font-weight: bold; color: #007bff; text-decoration: none; }
+    .repo-card a:hover { text-decoration: underline; }
+    .repo-card p { margin: 5px 0; }
+    pre { white-space: pre-wrap; } /* For raw README text */
+  </style>
+</head>
 <body>
-<header>
-  <h1>MoneyGod.ONE Ecosystem</h1>
-  <p>Explore the open-source projects powering the MoneyGod.ONE network</p>
-</header>
+  <div class="container">
+    <h1>MoneyGod.ONE Ecosystem</h1>
+    <p>Explore the open-source projects powering the MoneyGod.ONE network</p>
 
-<section>
-  <h2>📘 NOTE (from MGO README)</h2>
-  <div class="note" id="readme">Loading README...</div>
+    <h2>📘 NOTE (from MGO README)</h2>
+    <pre># MoneyGodONE Eco System
+https://moneygod.vercel.app / https://app.moneygod.one
+Contains all apps and packages links for the MGO ecosystem.
+Currently working on this (1) project Startuper https://github.com/MoneyGodONE/StartuperBE (idea https://startuper.be App https://app.startuper.be/)
+and this (2) project MGO Wallet https://mgo.money/wallet/aboutwallet/about (Android App https://play.google.com/store/apps/details?id=com.mgo.wallet)
+Demo of Android App https://www.youtube.com/watch?v=LKAT0mptmd0
+App http://app.MGO.money {web version} Apple and Windows versions soon
+</pre>
 
-  <h2>💎 Available Catalogues / Projects</h2>
-  <div class="catalog" id="repos">Loading projects...</div>
-</section>
-
-<footer>
-  © <span id="year"></span> MoneyGod.ONE | Auto-updated daily
-</footer>
-
-<script>
-const USER = "MoneyGodONE";
-const REPO = "MGO";
-
-// Set the current year
-document.getElementById("year").textContent = new Date().getFullYear();
-
-// Fetch README
-fetch(`https://api.github.com/repos/${USER}/${REPO}/readme`)
-  .then(response => response.json())
-  .then(data => {
-    const content = atob(data.content.replace(/\n/g, ''));
-    document.getElementById("readme").innerText = content;
-  })
-  .catch(error => {
-    document.getElementById("readme").innerText = "Failed to load README: " + error.message;
-  });
-
-// Fetch repositories
-fetch(`https://api.github.com/users/${USER}/repos`)
-  .then(response => response.json())
-  .then(repos => {
-    const catalog = document.getElementById("repos");
-    catalog.innerHTML = '';
-    repos.forEach(repo => {
-      const card = document.createElement('div');
-      card.className = 'card';
-      card.innerHTML = `
-        <a href="${repo.html_url}" target="_blank">${repo.name}</a>
-        <p>${repo.description || 'No description available'}</p>
-        <div class="meta">⭐ ${repo.stargazers_count} | 🍴 ${repo.forks_count} | Updated: ${new Date(repo.updated_at).toLocaleDateString()}</div>
-      `;
-      catalog.appendChild(card);
-    });
-  })
-  .catch(error => {
-    document.getElementById("repos").innerText = "Failed to load projects: " + error.message;
-  });
-</script>
+    <h2>💎 Available Catalogues / Projects</h2>
+    <div class="repo-grid">
+      
+    <div class="repo-card">
+      <a href="https://github.com/MoneyGodONE/MGO">MGO</a>
+      <p>crypto faith Money God One ecosystem [full desc on MoneyGod.ONE, MGO.money and partners web sites that listed us] https://app.moneygod.one/ README.md read https://github.com/MoneyGodONE/MGO?tab=readme-ov-file#readme</p>
+      <p>⭐ 1 | 🍴 0</p>
+    </div>
+  
+    <div class="repo-card">
+      <a href="https://github.com/MoneyGodONE/Startuper">Startuper</a>
+      <p>Crowdfunding [Startuper.BE]</p>
+      <p>⭐ 0 | 🍴 0</p>
+    </div>
+  
+    <div class="repo-card">
+      <a href="https://github.com/MoneyGodONE/MultiChain">MultiChain</a>
+      <p>No description provided.</p>
+      <p>⭐ 0 | 🍴 0</p>
+    </div>
+  
+    <div class="repo-card">
+      <a href="https://github.com/MoneyGodONE/BridgeApp">BridgeApp</a>
+      <p>Bridge Application between networks similiar to 1inch</p>
+      <p>⭐ 0 | 🍴 0</p>
+    </div>
+  
+    <div class="repo-card">
+      <a href="https://github.com/MoneyGodONE/MercenaryGame">MercenaryGame</a>
+      <p>Game using BSC [for transfer to other gaming project] / will be developed more games and our projects should be integrated with other games</p>
+      <p>⭐ 0 | 🍴 0</p>
+    </div>
+  
+    <div class="repo-card">
+      <a href="https://github.com/MoneyGodONE/SWAP">SWAP</a>
+      <p>MGO.money /SWAP currently developed on SOL only</p>
+      <p>⭐ 0 | 🍴 0</p>
+    </div>
+  
+    <div class="repo-card">
+      <a href="https://github.com/MoneyGodONE/SQUIRREX">SQUIRREX</a>
+      <p>Squirrex Exchange [squirrex.com]</p>
+      <p>⭐ 0 | 🍴 0</p>
+    </div>
+  
+    </div>
+  </div>
 </body>
 </html>
