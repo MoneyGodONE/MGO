@@ -10,4 +10,4 @@ App http://app.MGO.money {web version} Apple and Windows versions soon
 * Crowdfunding [Startuper.BE] public demo code https://github.com/MoneyGodONE/Startuper. This is old version (ver 0.1) you can copy it free of charge. New version here https://Startuper.BE app here https://app.startuper.be and is private on GitHub. If you are from Incubator or Accelerator or you are VC, we can discuss with you showing the code, please contact us via Startuper.be web site or via MoneyGod.One web site
 ** New version App https://app.startuper.be *currently private on GitHub please contact us directly in Telegram or email about the updates
 
-  *** GitHub version of MGO Wallet could also be given to you when further notice. Public demo version 0.1 here [https://github.com/MoneyGodONE/Startuper](https://github.com/MoneyGodONE/AppMGOmoney1)
+  *** GitHub version of MGO Wallet could also be given to you when further notice. Public demo version 0.1 here (https://github.com/MoneyGodONE/AppMGOmoney1)
