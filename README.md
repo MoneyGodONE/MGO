@@ -7,6 +7,7 @@ Currently working on this (2) project **Startuper*** https://github.com/MoneyGod
 and this (3) project **MGO Wallet***** https://mgo.money/wallet/aboutwallet/about (Android App https://play.google.com/store/apps/details?id=com.mgo.wallet)
 Demo of Android App https://www.youtube.com/watch?v=LKAT0mptmd0
 App http://app.MGO.money {web version} Apple and Windows versions soon
+**MGOSCAN.xyz** (4) - the future of Blockchain. Currently we base on Sol with goal and mission to build the strong chain including BSC, Base and to build our own Layer 1 blockchain.
 
 //
 * Crowdfunding [Startuper.BE] public demo code https://github.com/MoneyGodONE/Startuper. This is old version (ver 0.1) you can copy it free of charge. New version here https://Startuper.BE app here https://app.startuper.be and is private on GitHub. If you are from Incubator or Accelerator or you are VC, we can discuss with you showing the code, please contact us via Startuper.be web site or via MoneyGod.One web site
