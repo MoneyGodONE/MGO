@@ -45,13 +45,13 @@ Welcome to review our key projects and developments. This ecosystem covers areas
 * **[MLM](https://(DOmAIN BOUGHt site ready)** MLM.
 
 ### 🖧 Social Engyne *new type
-* **[MLM](https://_______________ )** Social.
+* **[Social](https://_______________ )** Social.
 
 ### © Publishing House
-* **[MLM](https://proektedem.com )** Proekt - Edem, Ent.
+* **[Agency](https://proektedem.com )** Proekt - Edem, Ent.
 
 ### 🛒 Internet Shop
-* **[MLM](https://MIUK.eu )** Magic In United Knowledge.
+* **[Shop](https://MIUK.eu )** Magic In United Knowledge.
 
 ... and other NON-public projects (permission depends of your level in our community)
 Also note and keep in mind (contribution depends on your level in our community)
@@ -124,13 +124,13 @@ markdown
 * **[МЛМ](https://(Домен куплен, сайт готов)** МЛМ.
 
 ### 🖧 Социальная сеть *новый тип
-* **[МЛМ](https://_______________ )** Социальные сети.
+* **[Сеть](https://_______________ )** Социальные сети.
 
 ### © Издательство
-* **[МЛМ](https://proektedem.com )** "Проект - Эдем", Лор.
+* **[Агентство](https://proektedem.com )** "Проект - Эдем", Лор.
 
 ### 🛒 Интернет-магазин
-* **[МЛМ](https://MIUK.eu )** Магия в едином знании.
+* **[Магазин](https://MIUK.eu )** Магия в едином знании.
 
 ... и другие НЕпубличные проекты (разрешение зависит от вашего уровня в нашем сообществе)
 Также обратите внимание и имейте в виду (размер взноса зависит от вашего уровня в нашем сообществе)
