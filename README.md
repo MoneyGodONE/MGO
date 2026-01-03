@@ -1,5 +1,6 @@
 markdown
 # 🌐 Our Ecosystem Portfolio
+_/ If you are considering investing between $20 million and $20 billion in us, make an official request to our companies or our leaders, we will provide you with additional information, as well as the ownership structure of our organizations and where there are investment opportunities. /_
 
 Welcome to review our key projects and developments. This ecosystem covers areas from AI and Blockchain to crowdfunding and media platforms and charitable initiatives.
 
@@ -53,6 +54,18 @@ Welcome to review our key projects and developments. This ecosystem covers areas
 ### 🛒 Internet Shop
 * **[Shop](https://MIUK.eu )** Magic In United Knowledge.
 
+### 💱 Exchange
+* **[CEX/DEX](https://Squirrex.com)** Crypto Exchange.
+
+### 👛 MGO Wallet
+* **[Wallet](https://MGO.money)** Crypto Wallet.
+
+### 🪙 Gold Company
+* **[Shop](https://__________ )** Gold reSeller. / separate from MGO now.
+
+### 🎮 Gaming Company
+* **[Games](https://__________ )** Gaming Development. / Separate from MGO now.
+
 ... and other NON-public projects (permission depends of your level in our community)
 Also note and keep in mind (contribution depends on your level in our community)
 ---
@@ -79,6 +92,7 @@ App http://app.MGO.money {web version} Apple and Windows versions soon
 
 markdown
 # 🌐 Наша Ecosystem Portfolio
+_/ Если вы рассматриваете возможность инвестиций к нам от 20 миллионов долларов до 20 миллиардов, делайте официальный запрос в наши компании или нашим лидерам, мы предоставим вам дополнительную информацию и также Структуру Собственности наших организаций и где какие возможности для инвестирования. /_
 
 Добро пожаловать в обзор наших ключевых проектов и разработок. Данная экосистема охватывает направления от AI и Blockchain до краудфандинга и медиа-платформ и благотворительные инициативы.
 
@@ -131,6 +145,18 @@ markdown
 
 ### 🛒 Интернет-магазин
 * **[Магазин](https://MIUK.eu )** Магия в едином знании.
+
+### 💱 Биржа
+* **[CEX/DEX](https://Squirrex.com)** Криптобиржа.
+
+### 👛 Кошелек MGO
+* **[Кошелек](https://MGO.money)** Криптокошелек.
+
+### 🪙 Золотая компания
+* **[Магазин](https: // <url>://__________ )** Продавец золота. / теперь отделен от MGO.
+
+### 🎮 Игровая компания
+* **[Игры](https: //://__________ )** Разработка игр. / Теперь отделена от MGO.
 
 ... и другие НЕпубличные проекты (разрешение зависит от вашего уровня в нашем сообществе)
 Также обратите внимание и имейте в виду (размер взноса зависит от вашего уровня в нашем сообществе)
