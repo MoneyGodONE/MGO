@@ -8,11 +8,11 @@ Welcome to review our key projects and developments. This ecosystem covers areas
 ### 🚀 Main Showcases (Showcase)
 * **[MGO Orbital](https://ElysiumO.com )** — The central hub and ecosystem of ElysiumO.
 *   **[MGO Foundation](https://MoneyGod.ORG)** — Charitable foundation and non-profit initiatives.
-*   **[MGO Corporation](https://MoneyGod.ORG)** — Corporate sector and financial architecture.
+*   **[MGO Corporation](https://MoneyGod.ONE)** — Corporate sector and financial architecture.
 
 ## Artificial Intelligence (AI)
 *   **[AI Coder](https://codeAI.fit)** is an advanced tool for automating code writing.
-* **[Elysia AI](https://elysiaAI.net )** is a new generation intelligent assistant.
+* **[Elysia AI](https://ElysiaAI.net )** is a new generation intelligent assistant.
 
 ### ⛓️ Blockchain & Web3
 *   **[MGOSCAN](https://MGOSCAN.xyz)** is a block browser and an analytical platform for the MGO blockchain.
@@ -24,6 +24,11 @@ Welcome to review our key projects and developments. This ecosystem covers areas
 * **[Church Online](https://You-Tube.org )** is a spiritual platform and community.
 * **[Video Hosting](https://youtub3.net )** is a decentralized video hosting and streaming service.
 
+### 😀 Charitable Initiatives
+* **[Charitable Fund](https://YouTube.org.ua )** Youtube Charitable.
+
+... and other NON-public projects (permission depends of your level in our community)
+Also note and keep in mind (contribution depends on your level in our community)
 ---
 
 ## 🛠 Technology stack
@@ -42,6 +47,7 @@ App http://app.MGO.money {web version} Apple and Windows versions soon
 //
 * Crowdfunding [Startuper.BE] public demo code https://github.com/MoneyGodONE/Startuper. This is old version (ver 0.1) you can copy it free of charge. New version here https://Startuper.BE app here https://app.startuper.be and is private on GitHub. If you are from Incubator or Accelerator or you are VC, we can discuss with you showing the code, please contact us via Startuper.be web site or via MoneyGod.One web site
 ** New version App https://app.startuper.be *currently private on GitHub please contact us directly in Telegram or email about the updates
+*** GitHub version of MGO Wallet could also be given to you when further notice. Public demo version 0.1 here (https://github.com/MoneyGodONE/AppMGOmoney1)
 
 ----ДЛЯ РУССКОязычных ИНВЕСТОРОВ---- Не понимаете английский? Не беда! Ниже
 
@@ -55,7 +61,7 @@ markdown
 ### 🚀 Главные витрины (Showcase)
 *   **[MGO Orbital](https://ElysiumO.com)** — Центральный хаб и экосистема ElysiumO.
 *   **[MGO Foundation](https://MoneyGod.ORG)** — Благотворительный фонд и некоммерческие инициативы.
-*   **[MGO Corporation](https://MoneyGod.ORG)** — Корпоративный сектор и финансовая архитектура.
+*   **[MGO Corporation](https://MoneyGod.COM)** — Корпоративный сектор и финансовая архитектура.
 
 ### 🤖 Искусственный Интеллект (AI)
 *   **[AI Coder](https://codeAI.fit)** — Продвинутый инструмент для автоматизации написания кода.
@@ -71,9 +77,13 @@ markdown
 *   **[Church Online](https://You-Tube.org)** — Духовная платформа и сообщество.
 *   **[Video Hosting](https://youtub3.net)** — Децентрализованный видеохостинг и стриминговый сервис.
 
+### 😀 Благотворительные инициативы
+* **[Благотворительный фонд](https://YouTube.org.ua )** Youtube Charitable.
+
+... и другие НЕпубличные проекты (разрешение зависит от вашего уровня в нашем сообществе)
+Также обратите внимание и имейте в виду (размер взноса зависит от вашего уровня в нашем сообществе)
+
 ---
 
 ## 🛠 Технологический стек
 `AI / ML` • `Blockchain` • `Smart Contracts` • `Web3` • `Fullstack Development`
-
-  *** GitHub version of MGO Wallet could also be given to you when further notice. Public demo version 0.1 here (https://github.com/MoneyGodONE/AppMGOmoney1)
