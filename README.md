@@ -1,7 +1,7 @@
 markdown
 # 🌐 Our Ecosystem Portfolio
 
-Welcome to review our key projects and developments. This ecosystem covers areas from AI and Blockchain to crowdfunding and media platforms.
+Welcome to review our key projects and developments. This ecosystem covers areas from AI and Blockchain to crowdfunding and media platforms and charitable initiatives.
 
 ---
 
@@ -9,6 +9,9 @@ Welcome to review our key projects and developments. This ecosystem covers areas
 * **[MGO Orbital](https://ElysiumO.com )** — The central hub and ecosystem of ElysiumO.
 *   **[MGO Foundation](https://MoneyGod.ORG)** — Charitable foundation and non-profit initiatives.
 *   **[MGO Corporation](https://MoneyGod.ONE)** — Corporate sector and financial architecture.
+
+## ₿ Cryptocurrency
+*   **[Crypto](https://MoneyGod.ONE)** MGO - Money God One
 
 ## Artificial Intelligence (AI)
 *   **[AI Coder](https://codeAI.fit)** is an advanced tool for automating code writing.
@@ -24,8 +27,31 @@ Welcome to review our key projects and developments. This ecosystem covers areas
 * **[Church Online](https://You-Tube.org )** is a spiritual platform and community.
 * **[Video Hosting](https://youtub3.net )** is a decentralized video hosting and streaming service.
 
-### 😀 Charitable Initiatives
+### ❤️ Charitable Initiatives
 * **[Charitable Fund](https://YouTube.org.ua )** Youtube Charitable.
+
+### 🏦 BANK
+* **[BANK](https://bank.com.ee )** Virtual Bank.
+
+### 🏠 Real Estate
+* **[Real Estate](https://InvestEstate.biz )** Basic Page.
+* **[Real Estate](https://InvestEstate.com.cy (MAIN site only) / mirror^ https://InvestEstate.org )** Buy Property.
+* **[Get documents via buying Real Estate with us](https://InvestEstate.org)** Get Documents. SOON! Currently different site for this.
+
+### 🆚 VC in web3.0 and property (balanced high risk, low risk portfolio)
+* **[Invest](https://InvestEstate.net)** Investments.
+
+### 🧑‍🧑‍🧒 MLM
+* **[MLM](https://(DOmAIN BOUGHt site ready)** MLM.
+
+### 🖧 Social Engyne *new type
+* **[MLM](https://_______________ )** Social.
+
+### © Publishing House
+* **[MLM](https://proektedem.com )** Proekt - Edem, Ent.
+
+### 🛒 Internet Shop
+* **[MLM](https://MIUK.eu )** Magic In United Knowledge.
 
 ... and other NON-public projects (permission depends of your level in our community)
 Also note and keep in mind (contribution depends on your level in our community)
@@ -54,7 +80,7 @@ App http://app.MGO.money {web version} Apple and Windows versions soon
 markdown
 # 🌐 Наша Ecosystem Portfolio
 
-Добро пожаловать в обзор наших ключевых проектов и разработок. Данная экосистема охватывает направления от AI и Blockchain до краудфандинга и медиа-платформ.
+Добро пожаловать в обзор наших ключевых проектов и разработок. Данная экосистема охватывает направления от AI и Blockchain до краудфандинга и медиа-платформ и благотворительные инициативы.
 
 ---
 
@@ -62,6 +88,9 @@ markdown
 *   **[MGO Orbital](https://ElysiumO.com)** — Центральный хаб и экосистема ElysiumO.
 *   **[MGO Foundation](https://MoneyGod.ORG)** — Благотворительный фонд и некоммерческие инициативы.
 *   **[MGO Corporation](https://MoneyGod.COM)** — Корпоративный сектор и финансовая архитектура.
+
+## ₿ Криптовалюта
+* **[Crypto](https://MoneyGod.ONE)** MGO - Единый Денежный Бог (Денежный Бог Один)
 
 ### 🤖 Искусственный Интеллект (AI)
 *   **[AI Coder](https://codeAI.fit)** — Продвинутый инструмент для автоматизации написания кода.
@@ -77,8 +106,31 @@ markdown
 *   **[Church Online](https://You-Tube.org)** — Духовная платформа и сообщество.
 *   **[Video Hosting](https://youtub3.net)** — Децентрализованный видеохостинг и стриминговый сервис.
 
-### 😀 Благотворительные инициативы
+### ❤️ Благотворительные инициативы
 * **[Благотворительный фонд](https://YouTube.org.ua )** Youtube Charitable.
+
+### 🏦 БАНК
+* **[БАНК](https://bank.com.ee )** Виртуальный банк.
+
+### 🏠 Недвижимость
+* **[Недвижимость](https://InvestEstate.biz )** Основная страница.
+* **[Недвижимость](https://InvestEstate.com.cy (только ОСНОВНОЙ сайт) / зеркало^ https://InvestEstate.org )** Покупайте недвижимость.
+* **[Получите документы, покупая недвижимость у нас](https://InvestEstate.org)** Получите документы. СКОРО! В настоящее время для этого есть другой сайт.
+
+### 🆚 Инвестиции в web3.0 и недвижимость (сбалансированный портфель с высоким и низким уровнем риска)
+* **[Инвестировать](https://InvestEstate.net)** Инвестиции.
+
+### 🧑🧑🧒 MLM
+* **[МЛМ](https://(Домен куплен, сайт готов)** МЛМ.
+
+### 🖧 Социальная сеть *новый тип
+* **[МЛМ](https://_______________ )** Социальные сети.
+
+### © Издательство
+* **[МЛМ](https://proektedem.com )** "Проект - Эдем", Лор.
+
+### 🛒 Интернет-магазин
+* **[МЛМ](https://MIUK.eu )** Магия в едином знании.
 
 ... и другие НЕпубличные проекты (разрешение зависит от вашего уровня в нашем сообществе)
 Также обратите внимание и имейте в виду (размер взноса зависит от вашего уровня в нашем сообществе)
