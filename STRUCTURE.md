@@ -116,8 +116,6 @@ RIGHT --> EDEM
 * **MGOSCAN.xyz** — blockchain analytics & explorer
 * **MGO.money** — crypto wallet
 * **Squirrex.com** — CEX / DEX exchange
-* **InvestEstate.biz / .net / .org** — real estate & investment platforms
-* **MIUK.eu** — e-commerce platform
 * **Fenixclub.org** — MLM
 * **X** — Social engine
 
